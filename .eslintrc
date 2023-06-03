@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "@tinkoff/eslint-config/app",
+    "@tinkoff/eslint-config-react",
+    "@tinkoff/eslint-config/jest"
+  ],
+  "rules": {
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["a"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ]
+  }
+}
